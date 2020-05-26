@@ -1,0 +1,13 @@
+#file
+*.vs
+/Debug
+/Release
+/RasterGo/Debug
+/RasterGo/Release
+/RGMath/Debug
+/RGMath/Release
+*.dll
+*.exp
+*.ilk
+*.lib
+*.pdb
