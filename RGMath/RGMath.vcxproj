@@ -90,7 +90,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>RGMATH_MATRIX; __MSC_VER__</PreprocessorDefinitions>
+      <PreprocessorDefinitions>RG_WINDOWS;RG_MATH;__MSC_VER__</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -116,7 +116,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>RGMATH_MATRIX; __MSC_VER__</PreprocessorDefinitions>
+      <PreprocessorDefinitions>RGMATH_MATRIX;RGMATH;__MSC_VER__</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -145,12 +145,13 @@
   <ItemGroup>
     <ClInclude Include="Matrix\Matrix.h" />
     <ClInclude Include="Global.h" />
+    <ClInclude Include="Matrix\Matrix3.h" />
     <ClInclude Include="RGMath.h" />
     <ClInclude Include="Vector\Vector3.h" />
     <ClInclude Include="Vector\Vector2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RGMath.cpp" />
+    <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

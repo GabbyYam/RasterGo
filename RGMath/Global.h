@@ -9,6 +9,7 @@
 
 #define RGM_VECTOR2
 #define RGM_VECTOR3
+#define RGM_MATRIX3
 
 #include<cmath>
 #include<iostream>

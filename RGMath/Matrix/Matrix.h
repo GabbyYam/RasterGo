@@ -1,5 +1,6 @@
-#ifdef RGMATH_MATRIX
-#define RGMATH_MATRIX
+#include"../Global.h"
+#ifdef RGM_MATRIX
+#define RGM_MATRIX
 #include<vector>
 #include"../Global.h"
 namespace rgm {
@@ -42,6 +43,10 @@ namespace rgm {
 				}
 			}
 			return nmatrix;
+		}
+
+		RGM_FORCEINLINE std::ostream& operator << (std::ostream& os, const Matrix& m) {
+			
 		}
 
 		RGM_FORCEINLINE ~Matrix() { delete this; }

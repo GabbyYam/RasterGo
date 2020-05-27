@@ -7,7 +7,7 @@ namespace rgm {
 	// typedef Vector2<int>   Vetor2int;
 
 	template <class T>
-	class Vector2 {
+	class RGM_API Vector2 {
 
 	public:
 		union {
@@ -15,8 +15,8 @@ namespace rgm {
 			struct { T u, v; }; // Texture basically
 		};
 		RGM_FORCEINLINE Vector2() : x(0), y(0) {};
-		RGM_FORCEINLINE Vector2(int i, int j) : x(i), y(j) {};
-		RGM_FORCEINLINE Vector2(int val) : x(val), y(val) {};
+		RGM_FORCEINLINE Vector2(T i, T j) : x(i), y(j) {};
+		RGM_FORCEINLINE Vector2(T val) : x(val), y(val) {};
 		RGM_FORCEINLINE Vector2(const Vector2& v) : x(v.x), y(v.y) {};
 		RGM_FORCEINLINE Vector2& operator = (const Vector2& v) {
 			x = v.x; y = v.y;
@@ -112,7 +112,7 @@ namespace rgm {
 		}
 
 		friend inline std::ostream& operator << (std::ostream& os, const Vector2& v) {
-			os << "[ " << v.x << ", " << v.y << "]" << std::endl;
+			os << "[ " << v.x << ", " << v.y << " ]" << std::endl;
 			return os;
 		}
 

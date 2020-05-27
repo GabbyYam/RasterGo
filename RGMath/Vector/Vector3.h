@@ -1,13 +1,17 @@
+#pragma once
 #include"../Global.h"
 #ifdef RGM_VECTOR3
 #define RGM_VECTOR3
 
 namespace rgm {
 	template<class T>
-	class Vector3
+	class RGM_API Vector3
 	{
 	public:
-		T x, y, z;
+		union {
+			struct { T x, y, z; };
+			struct { T x1, x2, x3; };
+		};
 	public:
 		RGM_FORCEINLINE Vector3() :
 			x(0), y(0), z(0) {};
@@ -27,7 +31,7 @@ namespace rgm {
 		}
 
 		RGM_FORCEINLINE bool operator == (const Vector3& v) const {
-			return this->x == v.x && this->y == v.y && this->z = v.z;
+			return this->x == v.x && this->y == v.y && this->z == v.z;
 		}
 
 		RGM_FORCEINLINE Vector3 operator + (const Vector3& v) {
@@ -68,7 +72,7 @@ namespace rgm {
 			return *this;
 		}
 
-		friend inline std::ostream& operator << (const std::ostream& os, const Vector3& v) {
+		friend inline std::ostream& operator << (std::ostream& os, const Vector3& v) {
 			os << "[ " << v.x << ", " << v.y << ", " << v.z << " ]";
 			return os;
 		}
