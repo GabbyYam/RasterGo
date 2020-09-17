@@ -92,12 +92,13 @@
       <PreprocessorDefinitions>RG_WINDOWS;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalUsingDirectories>E:\eigen-eigen-323c052e1731\eigen-eigen-323c052e1731;%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>$(SolutionDir)RGMath;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\Eigen\eigen-eigen-323c052e1731;E:\OpenCV\opencv\build\include;$(SolutionDir)RGMath</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(SolutionDir)RasterGo\RGMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(SolutionDir)RasterGo\RGMath.lib;E:\OpenCV\opencv\build\x64\vc14\lib\opencv_world3410.lib;E:\OpenCV\opencv\build\x64\vc14\lib\opencv_world3410d.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -151,11 +152,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="Model.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RGMath\RGMath.vcxproj">
       <Project>{f8c8a082-8742-43b0-b617-9f0774b2cb71}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Model.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

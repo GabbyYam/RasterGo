@@ -9,9 +9,13 @@
 
 #define RGM_VECTOR2
 #define RGM_VECTOR3
+#define RGM_VECTOR4
 #define RGM_MATRIX3
+#define RGM_MATRIX4
+#define RGM_MATRIX
 
 #include<cmath>
 #include<iostream>
+#include<xmemory>
 
 typedef float RG_FLOAT;

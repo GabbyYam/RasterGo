@@ -1,6 +1,6 @@
 #include"../Global.h"
-#ifdef RGM_MATRIX
-#define RGM_MATRIX
+#ifdef RGM_MATRIXxx
+#define RGM_MATRIXxx
 #include<vector>
 #include"../Global.h"
 namespace rgm {

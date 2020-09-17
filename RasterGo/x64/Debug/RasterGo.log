@@ -1,0 +1,2 @@
+﻿  EntryPoint.cpp
+E:\yamprod\RasterGo\RasterGo\EntryPoint.cpp(1,9): fatal error C1083: Cannot open include file: 'RGMath.h': No such file or directory

@@ -92,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>RG_WINDOWS;RG_MATH;__MSC_VER__</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,12 +144,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Matrix\BaseMatrix.h" />
     <ClInclude Include="Matrix\Matrix.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Matrix\Matrix3.h" />
+    <ClInclude Include="Matrix\Matrix4.h" />
     <ClInclude Include="RGMath.h" />
     <ClInclude Include="Vector\Vector3.h" />
     <ClInclude Include="Vector\Vector2.h" />
+    <ClInclude Include="Vector\Vector4.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test.cpp" />

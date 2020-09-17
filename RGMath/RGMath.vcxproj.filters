@@ -33,6 +33,15 @@
     <ClInclude Include="Matrix\Matrix3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Matrix\BaseMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector\Vector4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix\Matrix4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test.cpp">
